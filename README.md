@@ -8,7 +8,7 @@
 
 ## Other People's Experiments
 
-- [3December Experiments](https://alvarocasadoc.github.io/3December/)([source](https://github.com/alvarocasadoc/3December/): start with [Day 3](https://alvarocasadoc.github.io/3December/3/index.html)([source](https://github.com/alvarocasadoc/3December/tree/master/3))
+- [3December Experiments](https://alvarocasadoc.github.io/3December/) ([source](https://github.com/alvarocasadoc/3December/)): start with [Day 3](https://alvarocasadoc.github.io/3December/3/index.html) ([source](https://github.com/alvarocasadoc/3December/tree/master/3))
 
 ## A-Frame Tutorials
 
