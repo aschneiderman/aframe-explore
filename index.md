@@ -1,6 +1,8 @@
 ## My Experiments
 
 - Basic [Boxes](basics/01-010 Boxes.html)
+- [One Word](basics/one-word.html)
+- [3 words](basics/anders-three-words.html)
 
 ## Things to Try
 
