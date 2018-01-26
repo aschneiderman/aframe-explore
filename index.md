@@ -3,6 +3,7 @@
 - Basic [Boxes](basics/01-010 Boxes.html)
 - [One Word](basics/one-word.html)
 - [3 words](basics/anders-three-words.html)
+- [Throwable](throwing_experiment/index.html)
 
 ## Things to Try
 
