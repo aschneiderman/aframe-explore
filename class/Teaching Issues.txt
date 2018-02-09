@@ -1,0 +1,12 @@
+Teaching Issues
+
+
+What's the right sequence?
+E.g., mix-ins and templates vs. writing components and primitives
+
+
+What 1 or 2 teaching models do we want to support?
+
+
+Train the Trainer
+Do we want to encourage people to admit that they aren't experts yet, that they are learning together as well?
