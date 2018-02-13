@@ -6,18 +6,26 @@
   <body>
     <script>
       AFRAME.registerComponent('bugs-me-less', {
+        schema: {
+          message: {type: 'string', default: 'Hello, World!'}
+        },
         init: function () {
-            var el = this.el; // Explain what this means
+            var el = this.el; // <a-box>
+            console.log(this.data.message);
             el.setAttribute('opacity', 0.2);
+            el.setAttribute('color', 'turquoise');
         }
       });
     </script>
     <a-scene>
         <a-text value="What's Really Bugging Me"   font="kelsonsans"   position="-1.1 2.5 -1.5" color="black" ></a-text>
-        <a-box  font="kelsonsans"   position="-1.1 1.0 -1.5" color="red" ></a-text>
+        <a-text value="Waking up Early"  font="kelsonsans"   position="-1.1 1.0 -1.5" color="red" ></a-text>
         <a-text value="The News"   bugs-me-less font="kelsonsans"   position="-1.1 2 -1.5" color="red"></a-text>
         <a-text value="My Knees"   font="kelsonsans"   position="-1.1 1.5 -1.5" color="red" ></a-text>
         <a-sky color="lightyellow"></a-sky>
     </a-scene>
   </body>
 </html>
+<a-text value="The News" bugs-me-less="" font="kelsonsans" width="1.0" position="-1.1 2 -1.5" color="red" text="width:2" opacity="0.2"></a-text>
+
+<!-- text="opacity: 0.2; anchor: align; width: 5; value: My Knees; font: kelsonsans; color: red" press control -->

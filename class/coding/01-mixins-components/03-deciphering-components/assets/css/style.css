@@ -1,0 +1,254 @@
+@font-face {
+    font-family: Bungee;
+    src: url(../fonts/Bungee-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+body {
+    background: #131212;
+}
+
+h3 {
+    background: -webkit-linear-gradient(#ecd27a, #ff7954);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Bungee;
+    font-size: 4em;
+    line-height: 2;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+li {
+    align-self: flex-end;
+    flex: 1;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+li a {
+    color: #ff7954;
+    font-family: sans-serif;
+    margin: 10px;
+    max-width: 15vw;
+    text-decoration: none;
+}
+
+li img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 25vw;
+    height: 25vw;
+}
+
+tr {
+    color:white;
+}
+
+.attribution {
+    bottom: 0;
+    color: white;
+    font-family: sans-serif;
+    left: 0;
+    margin: 2em;
+    position: fixed;
+    z-index: 9999;
+}
+
+.back-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    left: 0;
+    padding: 1em;
+    position: fixed;
+    text-decoration: none;
+    top: 0;
+    z-index: 999;
+}
+
+.cam-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    right: 0;
+    padding: 1em;
+    position: fixed;
+    text-decoration: none;
+    top: 0;
+    z-index: 999;
+}
+
+.extra {
+    display: block;
+}
+
+.field-name {
+    color: white;
+    font-family: Bungee;
+}
+
+.instructions {
+    color: white;
+    font-family: Pacifico;
+    font-size: 1.5em;
+    pointer-events:none;
+    position: absolute;
+    text-align: center;
+    top: 3em;
+    width: 100%;
+    z-index: 90;
+}
+
+.loading {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #0F1B86;
+    font-family: Bungee;
+    padding: 2em;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+}
+
+.map-info {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    max-width: 30%;
+    padding: 1em;
+    position: fixed;
+    top: 55px;
+    z-index: 999;
+}
+
+.map-scene {
+    height: 100%;
+}
+
+.modal {
+    display: none;
+    height: 100vh;
+    padding-top: 3em;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    z-index: 500;
+}
+
+.modal .button {
+    border: none;
+    color: white;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 2em;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal h1 {
+    color: white;
+    font-family: Pacifico;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.modal p {
+    color: white !important;
+    font-family: sans-serif !important;
+    font-size: 1em;
+}
+
+.modal h2 {
+    color: white;
+    font-family: Pacifico;
+    font-size: 2em;
+}
+
+.model-info {
+    background: rgb(46, 46, 46);
+    color: white;
+    flex-grow: 1;
+    font-family: sans-serif;
+    padding-left: 2em;
+}
+
+.model-viewer {
+    flex-grow: 9;
+}
+
+.projects {
+    margin: 0 auto;
+    padding-top: 4em;
+    width: 80%;
+}
+
+.pdf-link {
+    color: #ecd27a;
+}
+
+.pdf-link:hover {
+    color: #ff7954;
+}
+
+.scene {
+    height: 75%;
+}
+
+.title {
+    font-family: Bungee;
+    font-size: 1.8em;
+    color: #ecd27a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#modal-info {
+    background: #01084f;
+    display: block;
+}
+
+#modal-info .button {
+    background-color: #0F1B86;
+}
+
+@media all and (max-width: 650px) {
+  li { 
+      flex: 1 100%; 
+  }
+
+  li img {
+      width: 85%;
+  }
+
+  .extra {
+      display: none;
+  }
+
+  .map-info {
+    max-width: 100%;
+    padding: 2em;
+    position: relative;
+  }
+
+  .map-scene {
+    height: 85%;
+  }
+}
+

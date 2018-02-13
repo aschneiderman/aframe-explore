@@ -14,7 +14,6 @@ Example:  "3 Things Getting on My Nerves"
 
 bugs-me-less
 
-Make one word shrink
 Make a word become slightly opaque
 
 ### 2) Redo Mixin as Component
@@ -23,16 +22,14 @@ Make a word become slightly opaque
 ### Write Your Own Component
 
 Implement what we just did
-Play: what other effects could you have? Check out the documentation for ideas (I need a link)
+Try changing the color
 
-### 3)  Clickable
-
-
-### 4) Parameter?  or changes per click?
-
+### 3) Parameter
 What you can't do with mixins: Passing a property: how much does it bug me?
 
-Adding Interaction: Make them shrink if you click on one of them
+### 4)  Clickable
+
+### 5)  Clickable: changes per click
 
 
 

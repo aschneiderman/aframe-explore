@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>What's Really Bugging Me </title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <script>
+      AFRAME.registerComponent('bugs-me-less', {
+          
+// What I need to do next:
+// Add a cursor
+// Turn the text into geometry
+
+        init: function () {
+            var el = this.el; // Explain what this means
+            el.addEventListener('click', function () {
+                el.setAttribute('opacity', 0.2);
+                // el.setAttribute('width', 4);
+             console.log("we clicked it");
+            
+            });
+        }
+      });
+    </script>
+    <a-scene>
+        <!-- <a-entity
+        geometry="primitive: plane; width: 1; height: auto"
+        material="color: lightyellow"  position="-1.1 1.0 -1.5"
+        text="value: This text will be 4 units wide."></a-entity> -->
+        <!-- <a-entity geometry="height:0.092;primitive:plane;width:2"
+         material="opacity:1;color:purple"  position="-2 1.0 -1.5"
+        text="align:right;color:red;width:5;value:Getting Up Early"
+        bugs-me-less
+        ></a-entity> -->
+
+        <a-text value="Getting up early" color= "red"  position="-1 1.0 -1.5" geometry="height:auto;primitive:plane;width:4"
+        material="opacity: 0" bugs-me-less></a-text>
+
+      
+      <!-- <a-entity geometry="primitive: box; depth: 0.01" text="value: hi there"></a-entity> -->
+      <!-- <a-text value="Now Interactable" geometry="primitive:plane"></a-text> -->
+      <a-text value="What's Really Bugging Me"   
+        font="kelsonsans"   position="-1.1 2.5 -1.5" color="black" ></a-text>
+        <!-- <a-text value="Waking up Early"  bugs-me-less        geometry="primitive: box; depth: 0.01; opacity: 0.2"         font="kelsonsans"   position="-1.1 1.0 -1.5" color="red" ></a-text> -->
+        <a-text value="The News" bugs-me-less font="kelsonsans"   position="-1.1 2 -1.5" color="red"></a-text>
+        <a-text value="My Knees"  bugs-me-less font="kelsonsans"   position="-1.1 1.5 -1.5" color="red" ></a-text>
+
+        <a-camera mouse-cursor >
+            <a-cursor fuse="true" color="green"></a-cursor>
+        </a-camera>
+
+        <a-sky color="lightyellow"></a-sky>
+    </a-scene>
+  </body>
+</html>
