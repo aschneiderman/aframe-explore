@@ -8,14 +8,16 @@
       AFRAME.registerComponent('could-bug-me-less', {
         init: function () {
             var el = this.el; 
+            var score = 10;
 
             // Text isn't clickable out-of-the-box; we need to add a geometry component, such as a plane
             el.setAttribute('geometry', "height:auto;primitive:plane;width:4");
             el.setAttribute('material', 'opacity: 0');      // Make the plane invisible
             
             el.addEventListener('click', function () {
-                el.setAttribute('opacity', 0.2);
-                el.object3D.scale.set(0.9, 0.9, 1);    
+              score = score - 1;
+              el.setAttribute('opacity', 0.05 * score);
+              el.object3D.scale.set(0.1 * score, 0.1 * score, 1);   
             });
         }
       });
