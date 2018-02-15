@@ -9,15 +9,26 @@
         init: function () {
             var el = this.el; 
             var score = 10;
+            var scene = document.querySelector('a-scene');
 
             // Text isn't clickable out-of-the-box; we need to add a geometry component, such as a plane
             el.setAttribute('geometry', "height:auto;primitive:plane;width:4");
-            el.setAttribute('material', 'opacity: 0');      // Make the plane invisible
-            
+            el.setAttribute('material', 'opacity: 0');      
+
             el.addEventListener('click', function () {
+
+              // Make the text a little smaller and a little less visible (i.e., less opaque)
               score = score - 1;
-              el.setAttribute('opacity', 0.05 * score);
               el.object3D.scale.set(0.1 * score, 0.1 * score, 1);   
+              el.setAttribute('opacity', 0.05 * score);
+
+              // Add a little ball in a randomly chosen location
+              var ball = document.createElement('a-sphere');
+              ball.setAttribute('color', 'turquoise');
+              ball.setAttribute('radius', '0.05');
+              ball.setAttribute('position', {x: Math.random(),  y: 2.4 - Math.random() * 1.5, 
+                                             z: -1.5 + Math.random()});
+              scene.appendChild(ball);
             });
         }
       });
