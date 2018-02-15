@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>What's Really Bugging Me </title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <script>
+    AFRAME.registerPrimitive('a-ocean', {
+    // Attaches the `ocean` component by default.
+    // Defaults the ocean to be parallel to the ground.
+    defaultComponents: {
+        ocean: {},
+        rotation: {x: -90, y: 0, z: 0}
+    },
+
+    // Maps HTML attributes to the `ocean` component's properties.
+    mappings: {
+        width: 'ocean.width',
+        depth: 'ocean.depth',
+        density: 'ocean.density',
+        color: 'ocean.color',
+        opacity: 'ocean.opacity'
+    }
+    });
+
+      AFRAME.registerComponent('could-bug-me-less', {
+        init: function () {
+            var el = this.el; 
+
+            // Text isn't clickable out-of-the-box; we need to add a geometry component, such as a plane
+            el.setAttribute('geometry', "height:auto;primitive:plane;width:4");
+            el.setAttribute('material', 'opacity: 0');      // Make the plane invisible
+            
+            el.addEventListener('click', function () {
+                el.setAttribute('opacity', 0.2);
+                el.object3D.scale.set(0.9, 0.9, 1);    
+            });
+        }
+      });
+    </script>
+
+    <a-scene>
+      <a-list title="What's Really Bugging Me" position="-1.1 2.5 -1.5" titleColor="black" titleFont="kelsonsans">
+      </a-list>
+      <a-sky color="lightyellow"></a-sky>
+      <a-camera mouse-cursor >
+        <a-cursor  color="green"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
