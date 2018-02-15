@@ -5,13 +5,13 @@
 Maybe I need a page of things you can do with HTML that it might not occur to you that you can do -- or that you may have seen at one point but forgot about. Maybe it's a cheat sheet?
 
 
-[NOTE: in my outline for the session, have instructor's note:
+NOTE: in my outline for the session, have instructor's note:
 Make sure everyone is comfortable reading HTML
 Ask people about their experience using HTML with A-Frame so far, get a show of hands to see who has done so
-]
+
 
 (In written tutorial, where to mention version 0, which has no JavaScript?)
-(Maybe just show it and say, our goal is to …)
+(Maybe just show it and say, our goal is to â€¦)
 
 ### 1) Basic Component
 
