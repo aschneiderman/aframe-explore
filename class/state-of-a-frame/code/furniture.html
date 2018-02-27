@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href = "style.css" rel = "stylesheet" type = "text/css"/>
+    
+    <!-- aframe lib, version 0.6.0 -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- 3d.io lib, version 1 beta (latest minor) -->
+    <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
+  
+  </head>
+  <body>
+    
+    <!-- 3D -->
+    <a-scene>
+      <a-entity id="office" io3d-data3d="key:/fd72bf39-9d3a-471f-a4ff-ecaa3f5ff30b/bake/2017-04-15_22-45-14_XsiltX/regular/lighting.gz.data3d.buffer" position="0 0 -6"></a-entity>
+      <a-entity id="couch"  io3d-furniture="id:fa56f1c5-bfce-4181-b310-c0ab12212d31" position="-2.7 0 -1.3" rotation="0 180 0"></a-entity>
+      <a-entity id="camera" camera="userHeight: 1.6" position="1 0 -4" rotation="0 90 0" wasd-controls="acceleration:8;easing:5;" look-controls ></a-entity>
+    
+      <a-entity gblock="https://vr.google.com/objects/duKsqcc0oUX"></a-entity>
+    </a-scene>
+    
+    
+  </body>
+  </html>
