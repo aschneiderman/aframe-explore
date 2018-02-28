@@ -1,34 +1,32 @@
-<html><head>
+<html>
+  <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script>
-  </head>
-  <body>
     <script>
-      AFRAME.registerPrimitive('a-google-block', {
+      AFRAME.registerPrimitive('google-block', {
         defaultComponents: {
-          position: {x: 0, y: 0, z: -2}
-            
-            // TO Check: does position need to be a default component?
-            //   does google-block?
-            //   does position need to be mapped?
+          googleblock: {},
         },
         mappings: {
-          src: 'google-block.src'
+          src: 'googleblock.src'
         }
       });
 
-    AFRAME.registerComponent('google-block', {
+    AFRAME.registerComponent('googleblock', {
       schema: {
-        src: {default: 'ewsXLyr8OPu'}
+        src: {type: 'string'}
       },
-      init: function () {
+      init: function () {       
         this.el.setAttribute('gblock', 'https://poly.google.com/view/' + this.data.src);
       }
     });
   </script>
+</head>
   
+<body>
   <a-scene>
-    <a-google-block src="ewsXLyr8OPu" position="0 0 -2"></a-google-block>  
+    <google-block src="bf6_h_1wp2D"  scale="0.03 0.03 0.03" position="0 1.5 -2.311"></google-block>  
+    <google-block src="ewsXLyr8OPu" position="0 0 -2.311"></google-block>  
   </a-scene>
     
 </body>
